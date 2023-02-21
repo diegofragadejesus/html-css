@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="Barkerbaggies-Bag-O-Tiles-D.ico" type="image/x-icon">
+    <title>aprendendo html no geral</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div>
+   <main><h1 id="n1"><strong> Aprendendo HTML & CSS :</strong></h1><br></main>
+    <hr>
+<h2>foto do curso de <strong>javaScript</strong> :</h2>
+    <img  src="thumb-js.png" alt="foto do curso de javaScript" ><br>
+    <h2>foto do curso de <strong> paython :</strong></h2>
+    <img src="thumb-python.png" alt="foto do cursooto do curso de paython"><br>
+    <h4>trabalhando com fotos dinamicas </h4>
+    <picture>
+        <source media="(max-width:750px )" srcset="foto-p.png" type="image/png"width="250" height="250">
+        <source media="(max-width:1050px )" srcset="foto-m.png" type="image/png" width="300" height="340">
+        <img src="foto-g.png" alt="imagem grande" width="500" height="500">
+    </picture>
+
+
+
+    <h3>formatação de textos e semântica :</h3>
+    <hr>
+    <p>para usar (negrito com semântica) usar teg = <strong>(strong)</strong></p>
+    <p>para usar (ítalico com semântica) urar teg = <em>(em)</em></p>
+    <p>para usar (marcação ) urar teg = <mark style="background-color: rgb(9, 231, 42);">(mark)</mark> </p>
+    <p>para usar (textos pequenos ) usar teg = <small> (small)</small></p>
+    <p>para usar (textos excluido ) usar teg = <del>del</del></p>
+    <p>para usar (textos com subliado) usar teg = <ins>ins</ins></p>
+    <p>para usar (textos ex= h<sub>2</sub>o) usar teg = <sub>sub</sub> </p>
+    <p>para usar (textos ex = x<sup>20</sup>) usar teg = <sup>sup</sup></p>
+    <p>para usar (citações simples) usar teg = <q>q</q></p>
+    <p>para usar (citações compostas) usar teg = <blockquote>blockquote</blockquote> adicional = teg (cite) para colocar o link do site referente a citação</p>
+    <p>usar para (mostra o nome completo da abreviação ex=<abbr title="hypertext harkup language">HTML</abbr> ) usar teg = abbr  </p>
+    <br>
+    <h2>formatação de codigos :</h2>
+    <hr>
+    <p> usar para melhorar a visão do codigo (ex = <code>document.getElementById</code> ) usar teg = code </p>
+<p>usar para ambientar melhor o codigo (ex = <pre> <code>  var n2 = document.getElementById('cal2')
+var v1 = Number(cal1.value)
+var v2 = Number(cal2.value)
+var r = v1 + v2
+res.innerHTML = `A soma do numero : ${v1} mais o numero ${v2} é igual a ${r}`</code>
+ </pre>usar teg = pre <br>adicianal = a teg (pre) pode ser utilizada em conjuto com (code)</p>
+<h2>ordem das listas</h2><hr>
+<h3>listas ordenadas :</h3>
+<ol>
+    <li>acordar</li>
+    <li>escovar os dentes</li>
+    <li>tomar café</li>
+    <li>ir estudar</li>
+</ol>
+<h3>listas não ordenadas :</h3>
+<ul>
+    <li>pão</li>
+    <li>açucar</li>
+    <li>sal</li>
+    <li>limão</li>
+</ul>
+<h4>listas fundidas :</h4>
+<ol>
+    <li><ins>pão</ins></li>
+    <ul>
+        <li>pão de sal</li>
+        <li>pão de milho</li>
+        <li>pão de leite</li>
+    </ul>
+    <li><ins>jogos</ins></li>
+    <ul>
+        <li>cod</li>
+        <li>ff</li>
+        <li>cs</li>
+    </ul>
+</ol>
+<h2>listas de definição</h2>
+<dl>
+    <dt><ins>HTML</ins></dt>
+    <dd><em>linguagem de marcação para criar site.</em></dd>
+    <dt><ins>CSS:</ins></dt>
+    <dd><em>linguagem de marcação para criar modificar site.</em></dd>
+    <dt><ins>javaScript :</ins></dt>
+    <dd><em>linguagem de progamação para interagir com o site</em>.</dd>
+</dl><hr>
+<h2>trabalhando com links :</h2>
+<h3>links externos :</h3>
+<p>EX = (aqui você pode assesar  <a href="https://www.instagram.com/" target="_blank" rel="external"> minha pagina no instagram</a>)</p><br>
+<h3>links internos :</h3>
+<p> EX = (você pode ir até a : <a href="atividade 2/pag2.html" rel="next" style="color: rgb(242, 225, 244);">pagina 2</a>)</p>
+<h3>links para dawload</h3>
+<ol>
+    <li><a href="livros/boleto dominio loja.pdf" download="boleto dominio loja . pdf" type="">baixar livro</a></li>
+    <li><a href="#">baixar livro</a></li>
+</ol>
+<h2>trabalhando com áudios:</h2><hr>
+<audio preload="metadata" controls>
+    <source src="atividade4/aldio.mp3" type="audio/mpeg">
+    <source src="atividade4/aldio.mp3" type="audio/ogg">
+</audio>
+<h1>trabalhando com vídeos:</h1>
+<!-- os mesmos metados usardos nos áldios se aplica aos vídeos -->
+<video controls width="500">
+    <source src="atividade5/file (1).mp4" type="video/mp4"><!--para tipos = (mp4 ou mv4) = mp4-->
+    <source src="atividade5/file (1).ogv" type="video/ogg"><!--caso o video seja (ogv) = ogg-->
+    <source src="atividade5/file (1).webm" type="video/webm"><!--caso o video seja (webm) = webm-->
+
+</video>
+<h2>video do youtube:</h2>
+<p><iframe width="500" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+<h2>video do vimeo</h2>
+<p><iframe src="https://player.vimeo.com/video/787938115?h=31fd5a1459&title=0&portrait=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <H1>desafio :</H1>
+<a href="pg1.html"><img src="thumb-html.png" alt="curso de css"></a> <a href="pg2.html"><img src="thumb-js.png" alt="curso de javaScript"></a><br>
+<a href="pg3.html"><img src="thumb-python.png" alt="curso de python"></a>
+</div><br>
+<div>
+    <p id="color">color</p>
+</div>
+<div>
+    <p id="dd">01</p>
+</div>
+
+
+
+</body>
+</html

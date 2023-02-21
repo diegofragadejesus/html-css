@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+}
+p{
+    font-size: 1.1em;
+    text-align: justify;
+    margin: 5px;
+}
+h1,h2{
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(255, 0, 0);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.3em;
+
+}
+main#m1,#m2{
+    background-color: rgb(127, 255, 212);
+    width: 460px;
+    box-shadow: 5px 5px 10px rgba(1, 85, 96, 0.656);
+    padding: 1px;
+    border-radius: 5px;
+    margin: auto;
+}
+@import url('https://fonts.googleapis.com/css2?family= Aboreto & display = swap');
+main#m1{
+    font-family: 'Aboreto', cursiva sans-serif;
+}

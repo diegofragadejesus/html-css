@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Orbitron: wght @400;500;600 & display=swap');
+
+body{
+    background-image: linear-gradient(90deg ,#02735E, #038C3E ,#07b142 );
+}
+div{
+    color: #f3eeee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    box-shadow: 5px 6px 10px #024b3c;
+    background-color: rgba(6, 226, 153, 0.713);
+    width: 500px;
+    padding: 10px;
+    margin:auto;
+    border-radius: 5px;
+}
+h1#n1{
+    text-align:center;
+    text-shadow: 1px 1px 1px #fb2206;
+    color: black;
+    text-decoration: underline;
+    font-family: 'Orbitron', sans-serif;
+
+}
+p{
+    text-align: justify;
+}
+p#color{
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    transform: skew(10deg) translate(100px);
+    border: 10px;
+    border: white;
+    border: solid;
+
+}
+p#dd{
+    background-color: aqua;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    color: #fb2206;
+    border: 10px ;
+    border: red;
+    border: solid;}
