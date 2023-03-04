@@ -21,7 +21,8 @@
 
 
 body{
-    background-color:var(--cor0) ;
+  /* background-image: url(imagens/dan-droids-pq.png); */
+  background-size: 100px 100px;
     margin: 0px ;
 }
 
