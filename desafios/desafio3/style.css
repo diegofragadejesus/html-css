@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import
+url('https://fonts.googleapis.com/css2?family= Sriracha & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Lilita +One & display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Sriracha', cursiva;
+    --fonte3:'Lilita One', cursiva;
+
+}
+*{
+
+  margin: 0%;
+  padding: 0%;
+
+}
+hatml, body{
+    max-height: 100vh;
+    font-family: var(--fonte1);
+  
+}
+header{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header h1{
+    padding-top: 50px;
+    font-family: var(--fonte3);
+    font-size: 10vw;
+}
+
+header> p{
+    padding-bottom: 50px;
+}
+
+header  a , footer  a {
+    color: white;
+    text-decoration: none;
+
+}
+ a:hover{
+    text-decoration: underline;
+
+}
+
+section{
+    font-size: 4.3vw;
+    font-family: var(--fonte2);
+    line-height: 2em;
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom:10vh ;
+}
+
+section.normal{
+    color: rgb(13, 13, 13);
+    background-color: white;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.385);
+    color: white;
+}
+section.imagem> p {
+    background-color: rgba(0, 0, 0, 0.429);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+section#img1{
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 20px rgb(0, 0, 0);
+}
+section#img2{
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.474);
+    border-radius: 20px 20px 0px 0px ;
+    text-align: center;
+    padding: 10px;
+}
