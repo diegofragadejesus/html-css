@@ -13,10 +13,31 @@
         table{
             border-collapse: collapse;
             width: 400px;
+            position: relative;
            
         }
+        thead > tr >th{
+            position: sticky;
+            top: -1px;
+               background-color: rgba(0, 0, 0, 0.761);
+        }
+        caption{
+            text-shadow: 1px 1px 1px white;
+            border: 1px solid black;
+            border-bottom: 0px;
+            border-radius: 9px 9px 0px 0px;
+            background-color: rgba(128, 128, 128, 0.526);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
         thead , tfoot{
-            background-color: rgba(128, 128, 128, 0.605);
+            background-color: rgba(0, 0, 0, 0.761);
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(128, 128, 128, 0.425);
+
         }
         th , td{
             border: 1px solid black;
@@ -28,18 +49,20 @@
     </style>
 </head>
 <body>
-    <h1>população das unidades federativas brasileiras</h1>
+    <h1>Uso de listas </h1>
     <table>
+   <caption>população das unidades federativas brasileiras</caption>
         <thead>
-            <th>Estado</th>
-            <th>
+            
+            <th scope="col">Estado</th>
+            <th scope="col">
                População
-                (Censo de 2010)</th>
+                </th>
         </thead>
         <tbody>
             <tr>
                 <td> São Paulo</td>
-                <td class="num">41 262 199</td>
+                <td class="num" style="width: 50px;">41 262 199</td>
             </tr>
             <tr>
                 <td> Minas Gerais</td>
@@ -149,7 +172,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td><strong>210.147.127</strong></td>
             </tr>
 
