@@ -13,9 +13,18 @@
             border: 1px solid black;
             padding: 10px;
         }
-        .head{
-            padding: 30px;
+        th{
+            background-color: rgba(101, 101, 101, 0.583);
+            color: white;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        } 
+        .cor{
+      background-color: white;
+      color: black;
+      text-shadow: 1px 1px 1px rgba(243, 239, 239, 0.761);
         }
+       
+        
     </style>
 </head>
 <body>
@@ -23,25 +32,30 @@
     <table>
         <thead >
             <tr>
-                <th class="head"  class="cor">
+                <th  rowspan="3" scope="col">
                     Área
                 </th>
-                <th  class="head"  class="cor">Disciplinas</th>
-                <th>
-                    Notas
+                
+                <th  rowspan="2" colspan="2" scope="col">Disciplinas</th>
+              
                 </th>
-                <th >Nota 1</th>
-                <th>
-                    Nota 2
-                </th>
-                <th  class="head" >
+                <th colspan="2" scope="colgroup">Notas</th>
+              
+                <th rowspan="2"  scope="col">
                     Medía
                 </th>
+            </tr>
+            <tr style="background-color: rgba(128, 128, 128, 0.081);">
+                <th scope="col">Nota 1</th>
+                <th scope="col"> Nota 2</th>
+             
+                
+               
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" colspan="2"  class="cor" scope="rowgroup" >Exatas</th>
                 <td>Matematica</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -68,11 +82,11 @@
                 <td>0.0</td>
             </tr>
             <tr>
-               <th colspan="5"> Media de Exatas</th>
-               <td>0.0</td>
+               <th colspan="5" class="head"  scope="row"> Media de Exatas</th>
+               <td style="background-color: rgba(8, 210, 8, 0.647);">0.0</td>
             </tr>
             <tr>
-                <th rowspan="2">
+                <th rowspan="2" class="cor" colspan="2"  scope="rowgroup">
                     Humanas
                 </th>
                 <td>Historia</td>
@@ -87,14 +101,11 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="5">Media de Humanas</th>
-                <td>0.0</td>
+                <th colspan="5" class="head"  scope="row">Media de Humanas</th>
+                <td style="background-color: rgba(8, 210, 8, 0.647);">0.0</td>
             </tr>
 
         </tbody>
-        <tfoot>
-
-        </tfoot>
     </table>
 </body>
 </html>
