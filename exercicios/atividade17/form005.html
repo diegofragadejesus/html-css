@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+          font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de Formulário</h1>
+    
+        <div>
+            <form action="form.js" method="get">
+                <fieldset>
+                    <legend><strong>Sexo</strong></legend>
+                    <p class="w">
+                        <label for="isexmas">Masculino</label>
+                        <input type="radio" name="sex" id="isexmas"><br>
+                        <label for="isexfem">Feminino </label>
+                        <input type="radio" name="sex" id="isexfem">
+                    </p>
+        </div>
+    
+            <div >
+                <fieldset>
+                    <legend><strong>Esportes</strong></legend>
+                    <p>
+                        <label for="ifut">Futebol</label>
+                        <input type="checkbox" name="fut" id="ifut"><br>
+                        <label for="ibas">Basquete</label>
+                        <input type="checkbox" name="bas" id="ibas"><br>
+                        <label for="ivol">Volei</label>
+                        <input type="checkbox" name="vol" id="ivol"><br>
+                        <label for="inat">Natação</label>
+                        <input type="checkbox" name="nat" id="inat">
+                    </p>
+            </div>
+            </fieldset>
+    </div>
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+    </form>
+</body>
+</html>
