@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplos de formulários</h1>
+    <div>
+        <form action="form.js" method="post">
+            <p>
+                <label for="iano">Ano do seu nascimento :</label>
+                <input type="number" name="ano" id="iano" min="1990" max="2023" oninput="calculeidade()">
+            </p>
+            <p>
+                <output id="res">Sua idade é :</output>
+
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+        <script>
+            function calculeidade(){
+                let atual = new Date().getFullYear()
+                res.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
+    </div>
+</body>
+</html>
