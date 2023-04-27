@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* comfigurações para telas eitadas */
+
+
+   
+
+body{
+   background-image: url(../imagem/cev-landscape.jpg);
+   background-position: left bottom;
+}
+
